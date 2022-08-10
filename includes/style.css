@@ -1,0 +1,16 @@
+.main-section {
+    border: 2px solid;
+    width: 1000px;
+    height: 350px;
+}
+
+.border {
+    border: 1px solid;
+}
+
+.each-piece-design {
+    height: 30px;
+    width: 320px;
+    padding: 5%;
+    margin: 4px;
+}
