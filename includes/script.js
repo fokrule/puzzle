@@ -3,12 +3,13 @@ function dragOver(e) {
 }
 
 function startDrag(e){
-    console.log(e.target.id)
     e.dataTransfer.setData("text",e.target.id);
 }
 
 function dropDrag (e) {
-    // e.preventDefault();
+    e.preventDefault();
     var data = e.dataTransfer.getData("text");
-    e.target.appendChild(document.getElementById(data));
+    if (e.toElement.childNodes.length <= 2) {
+        e.target.appendChild(document.getElementById(data));
+    }
 }
